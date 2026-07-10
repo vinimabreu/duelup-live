@@ -32,11 +32,12 @@ body{
 }
 
 /* header */
-header{display:flex;align-items:center;gap:14px;padding:6px 0 26px}
-header img{width:44px;height:44px;border-radius:10px}
-header .t b{font-size:20px;letter-spacing:.02em}
-header .t b i{color:var(--orange);font-style:normal}
-header .t span{display:block;font-size:12.5px;color:var(--muted)}
+header{display:flex;justify-content:flex-end;padding:2px 0 0}
+
+/* hero */
+.hero{text-align:center;margin:0 0 30px}
+.biglogo{width:min(600px,86vw);display:block;margin:0 auto}
+.tagline{color:var(--muted);font-size:15px;letter-spacing:.04em;margin-top:2px}
 header .live{margin-left:auto;display:inline-flex;align-items:center;gap:7px;font-size:11px;letter-spacing:.18em;color:var(--orange);border:1px solid var(--orange-line);background:var(--orange-soft);padding:6px 12px;border-radius:999px;font-weight:600}
 header .live i{width:7px;height:7px;border-radius:50%;background:var(--orange);animation:pulse 1.4s ease-in-out infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
