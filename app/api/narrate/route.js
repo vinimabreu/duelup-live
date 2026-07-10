@@ -9,11 +9,12 @@ function buildPrompt({ sport, teamA, tierA, teamB, tierB, score, rivalry, lang }
   const s = SPORT_LABELS[sport] || SPORT_LABELS.futevolei;
   const a = teamA?.trim() || (lang === "pt" ? "Lado A" : "Side A");
   const b = teamB?.trim() || (lang === "pt" ? "Lado B" : "Side B");
+  const setting = sport === "tenis" ? { en: "on the court", pt: "na quadra" } : { en: "on the sand", pt: "na areia" };
 
   if (lang === "en") {
-    return `You are an electrifying Brazilian beach-sports announcer narrating live, in ENGLISH, with that unmistakable Brazilian passion.
+    return `You are an electrifying Brazilian sports announcer narrating live, in ENGLISH, with that unmistakable Brazilian passion.
 
-Write a LIVE match call for a ${s.en} duel on the sand:
+Write a LIVE match call for a ${s.en} duel ${setting.en}:
 - Side A: ${a} (rank tier: ${tierA})
 - Side B: ${b} (rank tier: ${tierB})
 ${score?.trim() ? `- Match moment: ${score.trim()}` : ""}
@@ -28,7 +29,7 @@ Rules:
 - Output ONLY the narration text. No stage directions, no emojis, no quotes, no headings.`;
   }
 
-  return `Você é um locutor esportivo brasileiro elétrico, narrando AO VIVO na areia, estilo narração de rádio: rápido, apaixonado, arrepiante.
+  return `Você é um locutor esportivo brasileiro elétrico, narrando AO VIVO ${setting.pt}, estilo narração de rádio: rápido, apaixonado, arrepiante.
 
 Escreva a narração de um duelo de ${s.pt}:
 - Lado A: ${a} (elo/tier: ${tierA})

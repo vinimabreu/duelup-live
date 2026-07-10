@@ -83,19 +83,51 @@ export default function Home() {
   const tierLabel = (tier) => (lang === "en" ? TIER_EN[tier] || tier : tier);
 
   function runExample() {
-    const ex = {
-      sport: "futevolei",
-      teamA: "Vini & Pedrão",
-      tierA: "Prata",
-      teamB: "Rafa & Careca",
-      tierB: "Ouro",
-      score: lang === "en" ? "17-16, match point, blazing sun" : "17 a 16, match point, sol rachando",
-      rivalry:
-        lang === "en"
-          ? "rematch after last Sunday's comeback on the sand"
-          : "revanche da virada de domingo passado na areia",
+    const EXAMPLES = {
+      futevolei: {
+        teamA: "Vini & Pedrão", tierA: "Prata",
+        teamB: "Rafa & Careca", tierB: "Ouro",
+        score: { en: "17-16, match point, blazing sun", pt: "17 a 16, match point, sol rachando" },
+        rivalry: {
+          en: "rematch after last Sunday's comeback on the sand",
+          pt: "revanche da virada de domingo passado na areia",
+        },
+      },
+      beach_tennis: {
+        teamA: "Duda & Marina", tierA: "Ouro",
+        teamB: "Léo & Bia", tierB: "Platina",
+        score: { en: "6-5 in the tiebreak, golden point", pt: "6 a 5 no tie-break, ponto de ouro" },
+        rivalry: {
+          en: "two weeks of trash talk in the group chat led to this",
+          pt: "duas semanas de provocação no grupo terminam aqui",
+        },
+      },
+      tenis: {
+        teamA: "Serginho", tierA: "Bronze",
+        teamB: "Guga Jr.", tierB: "Diamante",
+        score: { en: "5-4 in the third set, the underdog is serving for the match", pt: "5 a 4 no terceiro set, a zebra sacando para o jogo" },
+        rivalry: {
+          en: "the club upset of the year, one game away",
+          pt: "a zebra do ano no clube, a um game de acontecer",
+        },
+      },
+      volei_praia: {
+        teamA: "Talita & Ju", tierA: "Elite",
+        teamB: "Carol & Fê", tierB: "Elite",
+        score: { en: "14-14 in the deciding set, next point takes it all", pt: "14 a 14 no set decisivo, quem fizer leva tudo" },
+        rivalry: {
+          en: "the all-Elite grudge match, five wins each this season",
+          pt: "clássico de Elites, cinco vitórias para cada só este ano",
+        },
+      },
     };
-    setSport(ex.sport);
+    const e = EXAMPLES[sport] || EXAMPLES.futevolei;
+    const ex = {
+      sport,
+      teamA: e.teamA, tierA: e.tierA,
+      teamB: e.teamB, tierB: e.tierB,
+      score: e.score[lang], rivalry: e.rivalry[lang],
+    };
     setTeamA(ex.teamA);
     setTierA(ex.tierA);
     setTeamB(ex.teamB);
