@@ -194,6 +194,7 @@ export default function Home() {
         </span>
       </header>
 
+      <main>
       <div className="card">
         <span className="lbl">{t.sport}</span>
         <div className="sports">
@@ -280,6 +281,7 @@ export default function Home() {
           <audio ref={audioRef} controls />
         </div>
       )}
+      </main>
 
       <footer>
         {t.footer1}{" "}

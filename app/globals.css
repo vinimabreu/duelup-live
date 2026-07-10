@@ -41,6 +41,9 @@ header .live{margin-left:auto;display:inline-flex;align-items:center;gap:7px;fon
 header .live i{width:7px;height:7px;border-radius:50%;background:var(--orange);animation:pulse 1.4s ease-in-out infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
 
+/* main centers between header and footer; auto margins are overflow-safe */
+main{margin:auto 0;padding:10px 0}
+
 /* cards */
 .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px}
 .card + .card{margin-top:16px}
