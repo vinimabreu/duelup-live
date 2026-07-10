@@ -9,7 +9,11 @@
   --orange2:#ff8a3d;
 }
 
-html{color-scheme:light}
+html{color-scheme:dark;scrollbar-width:thin;scrollbar-color:#2a2016 transparent}
+::-webkit-scrollbar{width:11px;height:11px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:#2a2016;border-radius:8px;border:2px solid transparent;background-clip:padding-box}
+::-webkit-scrollbar-thumb:hover{background:#3a2c1e}
 body{
   background:radial-gradient(120% 90% at 50% -10%, #2a2016, #140f0b 70%);
   color:var(--ink);
