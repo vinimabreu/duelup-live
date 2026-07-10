@@ -35,7 +35,7 @@ body{
 header{display:flex;justify-content:flex-end;padding:2px 0 0}
 
 /* hero */
-.hero{text-align:center;margin:0 0 30px}
+.hero{text-align:center;margin:0 0 clamp(44px,7vh,84px)}
 .biglogo{width:min(600px,86vw);display:block;margin:0 auto}
 .tagline{color:var(--muted);font-size:15px;letter-spacing:.04em;margin-top:2px}
 header .live{margin-left:auto;display:inline-flex;align-items:center;gap:7px;font-size:11px;letter-spacing:.18em;color:var(--orange);border:1px solid var(--orange-line);background:var(--orange-soft);padding:6px 12px;border-radius:999px;font-weight:600}
