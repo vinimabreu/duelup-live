@@ -2,11 +2,19 @@
 
 **The AI announcer for beach-sport duels, on a vintage fight bill.** Pick the sport, write in the two sides with their nicknames and ranks, set the moment and the bad blood, ring the bell, and an electrifying sports announcer calls the match live. Gemini writes the play-by-play, ElevenLabs gives it a voice.
 
+![DuelUp Live](docs/banner.png)
+
+**🔔 Live demo: [live.duelup.app](https://live.duelup.app)** &nbsp;·&nbsp; **📝 Write-up: [dev.to post](https://dev.to/vinimabreu/i-gave-my-futevolei-crew-an-ai-announcer-duelup-live-4h60)**
+
 Built for the [DEV Weekend Challenge: Passion Edition](https://dev.to/challenges/weekend-2026-07-09), and for my real futevôlei crew.
 
 Part of the **DuelUp** universe, a competitive platform for amateur beach sports (ELO ranking, tiers from Sand to Legend, virtual-coin stakes) that I built for my own group. DuelUp Live gives our duels the one thing they were missing: a voice.
 
-**Live demo:** [live.duelup.app](https://live.duelup.app)
+## A call, live
+
+Ring the bell and the announcer opens the card. Every ring is a fresh call.
+
+![The announcer's call, with the real audio player](docs/announcer-call.png)
 
 ## How it works
 
