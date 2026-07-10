@@ -35,6 +35,7 @@ const T = {
     go: "🔔 RING THE BELL",
     theCall: "AND THE CALL IS",
     idleHint: "Ring the bell and the AI announcer opens the card.",
+    note: "Live demo: every ring is a fresh call, written and voiced on the spot. The same duel never sounds the same twice. Allow ~20 seconds.",
     writing: "THE ANNOUNCER IS WRITING THE CARD…",
     voicing: "WARMING UP THE VOICE…",
     footer: "Futevôlei crew · DuelUp universe · Gemini writes · ElevenLabs calls it",
@@ -56,6 +57,7 @@ const T = {
     go: "🔔 TOCAR O SINO",
     theCall: "E A NARRAÇÃO É",
     idleHint: "Toque o sino e o locutor de IA abre o card.",
+    note: "Demo ao vivo: cada sino gera uma narração nova, escrita e narrada na hora. O mesmo duelo nunca sai igual duas vezes. Leva ~20 segundos.",
     writing: "O LOCUTOR ESTÁ ESCREVENDO O CARD…",
     voicing: "AQUECENDO A VOZ…",
     footer: "Grupo de futevôlei · universo DuelUp · Gemini escreve · ElevenLabs narra",
@@ -409,6 +411,7 @@ export default function Home() {
           <div className="rule" />
 
           <div className="tapehead">{t.theCall} · <em>{sportLabel}</em></div>
+          <div className="demonote mono">{t.note}</div>
 
           {phase === "idle" && <div className="idlehint">{t.idleHint}</div>}
           {phase === "writing" && <div className="phaseline">{t.writing}</div>}

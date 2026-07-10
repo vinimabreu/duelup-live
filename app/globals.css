@@ -164,6 +164,7 @@ select option{background:var(--paper);color:var(--ink)}
 .bell:disabled{opacity:.6;cursor:default;background:var(--ink);color:var(--paper)}
 
 /* the call */
+.demonote{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--faded);margin:-6px 0 14px;line-height:1.7}
 .idlehint{font-weight:700;font-size:14px;color:var(--faded)}
 .phaseline{font-family:var(--font-anton);font-size:19px;letter-spacing:.04em;color:var(--orange)}
 .call{font-weight:700;font-size:18px;line-height:1.55;color:var(--ink);text-wrap:pretty;margin-top:10px;white-space:pre-wrap}
