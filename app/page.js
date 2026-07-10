@@ -181,14 +181,11 @@ export default function Home() {
 
   return (
     <div className="wrap">
-      <header>
+      <main>
+      <div className="hero">
         <span className="live">
           <i /> {t.live}
         </span>
-      </header>
-
-      <main>
-      <div className="hero">
         <img src="/logo.png" alt="DuelUp Live" className="biglogo" />
         <p className="tagline">{t.tagline}</p>
       </div>
